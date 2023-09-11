@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-red-300;
+}
+
+h1 {
+  @apply font-semibold text-5xl my-10 flex justify-center text-gray-600;
+}
+
+form {
+  @apply flex justify-between;
+}
+
+.display {
+  @apply w-4/5 min-h-[100px] max-w-[1000px] bg-slate-400 rounded-lg p-4 py-4;
+}
+
+.form-layout {
+  @apply flex justify-between gap-4 mt-4 mb-6 w-full;
+}
+
+input {
+  @apply h-12 w-3/4 rounded-lg pl-4 border-none outline-none font-semibold text-lg text-gray-600 bg-slate-100 caret-red-300;
+}
+
+.add {
+  @apply w-1/4 bg-slate-100 h-12 rounded-lg font-semibold text-lg text-gray-600 active:bg-slate-200 border-none outline-none;
+}
+
+.content {
+  @apply flex justify-between bg-[#F1F5F9]  min-h-full h-11 rounded-lg px-4 font-semibold text-xl text-gray-600 my-3 items-center w-full;
+}
+
+.check {
+  @apply rounded-lg bg-red-300 px-3 py-1 cursor-pointer;
+}
+
+.words {
+  @apply w-[70%] break-words max-sm:w-1/2;
+}
+
+.done {
+  @apply mr-3;
+}
+
+.completed {
+  @apply line-through decoration-[3px] decoration-gray-600;
+}
